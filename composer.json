@@ -1,0 +1,20 @@
+{
+    "name": "bookstackapp/cli",
+    "description": "CLI interface for BookStack",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dan Brown",
+            "email": "ssddanbrown@googlemail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "BookStackCli\\": "commands/"
+        }
+    },
+    "require": {
+        "symfony/console": "^3.1"
+    }
+}

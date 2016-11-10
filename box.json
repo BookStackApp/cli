@@ -1,0 +1,14 @@
+{
+  "directories": ["commands"],
+  "main": "bookstack",
+  "output": "bookstack.phar",
+  "chmod": "0755",
+  "stub": true,
+  "finder": [
+    {
+      "name": "*.php",
+      "exclude": ["Tests"],
+      "in": "vendor"
+    }
+  ]
+}

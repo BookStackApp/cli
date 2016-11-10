@@ -1,0 +1,14 @@
+#!/usr/bin/env php
+<?php
+
+use BookStackCli\UpdateVendor;
+use Symfony\Component\Console\Application;
+
+require __DIR__.'/vendor/autoload.php';
+
+$application = new Application("BookStack CLI");
+
+// Register commands
+$application->add(new UpdateVendor());
+
+$application->run();
