@@ -16,5 +16,8 @@
     },
     "require": {
         "symfony/console": "^3.1"
-    }
+    },
+    "bin": [
+        "bookstack"
+    ]
 }
