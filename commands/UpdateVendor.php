@@ -68,11 +68,18 @@ class UpdateVendor extends BaseCommand
         $output->writeln("<info>Vendor folder successfully updated</info>");
     }
 
+    /**
+     * Retrieve the temp zip file location.
+     * @return string
+     */
     protected function getTempZipLocation()
     {
         return getcwd() . '/vendor.tmp.zip';
     }
 
+    /**
+     * Remove the temporary zip and clean up files.
+     */
     protected function cleanUp()
     {
         if (file_exists($this->getTempZipLocation())) {
@@ -81,8 +88,8 @@ class UpdateVendor extends BaseCommand
     }
 
     /**
-     * Recrusively delete a directory
-     * @param $dir
+     * Recursively delete a directory.
+     * @param string $dir
      */
     protected function rrmdir($dir) {
         if (is_dir($dir)) {
